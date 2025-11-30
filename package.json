@@ -1,15 +1,15 @@
 {
-  "name": "brutal",
-  "version": "1.2.0",
+  "name": "inf24-unlip",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "packageManager": "pnpm@8.6.0",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "Informatika 24 | Universitas Linggabuana PGRI Sukabumi",
+    "email": "informatikagen02@gmail.com",
+    "url": "https://inf24-unlip.vercel.app/"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://inf24-unlip.vercel.app/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -21,7 +21,7 @@
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.6.0",
     "@eliancodes/brutal-ui": "^0.2.3",
-    "@unocss/astro": "^0.57.7",
+    "@unocss/astro": "^66.5.7",
     "astro": "^5.14.7",
     "astro-font": "^0.0.80",
     "satori": "^0.5.0",
@@ -39,6 +39,6 @@
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.2",
     "sharp": "^0.32.6",
-    "unocss": "^0.57.7"
+    "unocss": "^66.5.7"
   }
 }

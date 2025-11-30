@@ -1,95 +1,105 @@
 ---
 import Layout from '@layouts/Default.astro';
-import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
-import { Button } from '@eliancodes/brutal-ui';
-import { Card } from '@eliancodes/brutal-ui';
+import { Button, Card } from '@eliancodes/brutal-ui';
+import members from '../content/members.json';
 
 const builtWith = [
-  { name: 'Astro', url: 'https://astro.build/' },
-  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
-  {
-    name: 'Content Collections',
-    url: 'https://docs.astro.build/en/guides/content-collections/',
-  },
-  { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
-  {
-    name: 'Sitemap',
-    url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
-  },
+  { name: 'Astro.js', url: 'https://astro.build/' },
+  { name: 'Tailwind', url: 'https://tailwindcss.com/' },
   { name: 'Vercel', url: 'https://vercel.com' },
-  { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
 ];
+
+const strukturRoles = ["Ketua Kelas", "Sekretaris", "Bendahara"];
+const strukturKelas = members
+  .filter((m) => strukturRoles.includes(m.role) && m.active !== false)
+  .sort((a, b) => strukturRoles.indexOf(a.role) - strukturRoles.indexOf(b.role));
 ---
 
 <Layout
   title='Home'
-  pageTitle='Brutal Theme | Home'
-  description='Brutal is a minimalistic, neobrutalism theme for Astro.'
+  pageTitle='INF24-UNLIP | Home'
+  description='Website Kelas Informatika 24 Universitas Linggabuana PGRI Sukabumi.'
 >
-  <main class='bg-pink p-6'>
-    <MobileSocials />
-    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-      <h2 class='hidden'>About Brutal</h2>
-      <div class='col-span-4'>
-        <Card>
-          <div class='flex flex-col justify-between items-start gap-4'>
-            <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              Brutal theme for <a
-                class='text-white'
-                target='_blank'
-                href='https://astro.build/'>Astro</a
-              >
-            </p>
-            <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              A minimalistic, neobrutalism theme for Astro.
-            </p>
-            <Button target={'_self'} href='/blog/'>
-              Check out the blog &rarr;
-            </Button>
+  <main class="bg-green">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative flex flex-col lg:flex-row items-center justify-between gap-8 p-8 md:p-12 lg:p-16">
+      <div class="flex-1 z-10 text-center lg:text-left">
+        <h1 class="inline-block text-6xl md:text-7xl lg:text-9xl font-extrabold uppercase tracking-tight -skew-x-6">
+          INF<span class="text-white drop-shadow-[3px_3px_0_#000] drop-shadow-[-3px_-3px_0_#000] drop-shadow-[3px_-3px_0_#000] drop-shadow-[-3px_3px_0_#000]">#24</span>
+        </h1>
+
+        <p class="mt-4 text-base md:text-lg lg:text-xl font-semibold max-w-xl mx-auto lg:mx-0">
+          Kelas Informatika 24 — Universitas Linggabuana PGRI Sukabumi.
+        </p>
+
+        <div class="mt-6 flex justify-center lg:justify-start">
+          <Button>Lihat Anggota Kelas →</Button>
+        </div>
+      </div>
+
+      <Card>
+        <div class="relative">
+          <div class="w-full overflow-hidden aspect-[4/3] md:aspect-auto md:h-96 md:aspect-auto">
+            <img src="/images/12.jpg" alt="INF24" class="w-full h-full object-cover" />
           </div>
-        </Card>
-      </div>
-      <div class='col-span-2'>
-        <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            Brutal is built with
-          </h2>
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Pill>
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </Pill>
-                </li>
-              ))
-            }
-          </ul>
-        </Card>
-      </div>
-      <div class='col-span-2'>
-        <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal?
-          </h2>
-          <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
-          </p>
-        </Card>
+
+          <div class="absolute -top-6 -right-6 w-20 h-20 border-3 border-black bg-white p-1">
+            <img src="/univ-linggabuana.png" alt="Logo Universitas Linggabuana" class="w-full h-full object-contain"/>
+          </div>
+
+          <div class="absolute bottom-3 left-3 px-2 py-0.5 bg-white border-3 border-black font-bold text-xs md:bottom-4 md:left-4 md:px-3 md:py-1 md:text-sm">
+            REGULAR
+          </div>
+        </div>
+      </Card>
+    </section>
+
+    <!-- MOBILE SOCIALS -->
+    <section class="px-8 pb-10 md:px-12 md:py-8 block md:hidden">
+      <MobileSocials />
+    </section>
+
+    <!-- STRUKTUR KELAS -->
+    <section id="struktur-kelas" class="px-8 py-12 md:px-16 bg-white border-t-4 border-black">
+      <h2 class="text-4xl md:text-6xl font-extrabold uppercase mb-8 text-center">Struktur Kelas</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {strukturKelas.map((person) => (
+          <div class="p-6 border-4 border-black bg-blue font-bold text-lg text-center">
+            <p class="uppercase text-sm opacity-80">{person.role}</p>
+
+            <p class="text-lg md:text-base lg:text-2xl mt-2">{person.name}</p>
+
+            {person.photo && (
+              <div class="w-full aspect-square mt-4 overflow-hidden bg-gray-200 border-2 border-black">
+                <img 
+                  src={person.photo} 
+                  alt={person.name}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            )}
+
+          </div>
+        ))}
       </div>
     </section>
-    <RecentBlogPosts />
+
+    <!-- TECH STACK -->
+    <section id="tech-stack" class="px-8 py-12 md:px-12 lg:px-16 bg-pink border-t-4 border-black">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase mb-8 text-center">Tools & Tech Stack</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {builtWith.map((tool) => (
+          <Button href={tool.url} target="_blank">
+            {tool.name}
+          </Button>
+        ))}
+      </div>
+    </section>
+
   </main>
 </Layout>
