@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Seli Nopiani",
+    "role": "Ketua Kelas",
+    "active": true,
+    "photo": "/images/members/seli.jpg",
+    "instagram": "slinpiii.ii",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Muhamad Ihsan",
+    "role": "Sekretaris",
+    "active": true,
+    "photo": "/images/members/ihsan.jpg",
+    "instagram": "sann_kuyy",
+    "skills": ["Public Speaking", "UI/UX", "Design grafis"],
+    "linkedin": "https://id.linkedin.com/in/muhamad-ihsan-a77b2a38b",
+    "github": ""
+  },
+  {
+    "name": "Sazkia Salsabila",
+    "role": "Bendahara",
+    "active": true,
+    "photo": "/images/members/sazkia.jpg",
+    "instagram": "aikzasbila",
+    "skills": "",
+    "linkedin": "https://www.linkedin.com/in/sazkia-salsabila-a32637351/",
+    "github": ""
+  },
+  {
+    "name": "Ade Ramadhani Putra",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/ade.jpg",
+    "instagram": "rama_tcp",
+    "skills": ["Full-Stack","Troubleshooting", "Linux & Server Management"],
+    "linkedin": "https://www.linkedin.com/in/rama-xd/",
+    "github": "https://github.com/Rama-X2"
+  },
+  {
+    "name": "Akbar Maulana",
+    "role": "Anggota",
+    "active": false,
+    "photo": "/images/members/akbar.jpg",
+    "instagram": "akbar190603",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Algariz Tegar Aziz",
+    "role": "Anggota",
+    "active": false,
+    "photo": "/images/members/algariz.jpg",
+    "instagram": "_algariztgrzz",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Andika Wahyu Hidayat",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/andika.jpg",
+    "instagram": "andikawahyu_15",
+    "skills": "",
+    "linkedin": "",
+    "github": "https://github.com/andikawahyu-io"
+  },
+  {
+    "name": "Fadilatul Hamid",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/fadilatul.jpg",
+    "instagram": "jaisyullah_21",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Imron Firmansyah",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/imron.jpg",
+    "instagram": "meunihemm0_0",
+    "skills": ["Bisa jadi bek atau kiper,kadang maju"],
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Isyal Fauzi",
+    "role": "Anggota",
+    "active": false,
+    "photo": "/images/members/isyal.jpg",
+    "instagram": "isyl.fzi27",
+    "skills": "",
+    "linkedin": "",
+    "github": "https://github.com/IsyalFauzi"
+  },
+  {
+    "name": "Najma Fajrian N.I",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/najma.jpg",
+    "instagram": "aciwir",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "M Hasbi Hasbullah",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/hasbi.jpeg",
+    "instagram": "hasbihasbullh_",
+    "skills": ["Full-Stack", "UI/UX", "Linux"],
+    "linkedin": "https://www.linkedin.com/in/m-hasbi-hasbullah-1a152b340/",
+    "github": "https://github.com/hasbihasbullh"
+  },
+  {
+    "name": "M Taura Azzam",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/azzam.jpg",
+    "instagram": "azzamorg_",
+    "skills": ["Public Speaking", "Drawing", "Music"],
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Rico Prima Putra",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/rico.jpg",
+    "instagram": "rcprmptraa_",
+    "skills": ["Public Speaking", "Berpikir Kritis", "Bernegosiasi"],
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Kamila Eka Yantri",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/kamila.jpg",
+    "instagram": "__j.kmlxyn",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Sendi Ardiansyah",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/sendi-ar.jpg",
+    "instagram": "sendiardsyh_",
+    "skills": ["Html", "Css", "JavaScript", "Sport"],
+    "linkedin": "https://id.linkedin.com/in/sendi-ardiansyah-50bb2a38b",
+    "github": ""
+  },
+  {
+    "name": "Sendi Maulana",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/sendi-m.jpg",
+    "instagram": "sndimlna78_",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  },
+  {
+    "name": "Shera Nisa Shaefar",
+    "role": "Anggota",
+    "active": false,
+    "photo": "/images/members/shera.jpg",
+    "instagram": "ransshfr",
+    "skills": "",
+    "linkedin": "https://www.linkedin.com/in/shera-nisa-76b18033b/",
+    "github": ""
+  },
+  {
+    "name": "Sihab Abdul Hakim",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/sihab.jpg",
+    "instagram": "shb.abdl.hkm",
+    "skills": ["Public Speaking", "Editing", "Programing"],
+    "linkedin": "https://www.linkedin.com/in/sihab-abdul-hakim-6a5b20385/",
+    "github": "https://github.com/SHIMpanseKun"
+  },
+  {
+    "name": "Syahwal Dwi Putra",
+    "role": "Anggota",
+    "active": true,
+    "photo": "/images/members/syahwal.jpg",
+    "instagram": "syahwalldp",
+    "skills": "",
+    "linkedin": "",
+    "github": ""
+  }
+]
