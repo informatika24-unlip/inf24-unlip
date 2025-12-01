@@ -5,8 +5,8 @@
     "active": true,
     "photo": "/images/members/seli.jpg",
     "instagram": "slinpiii.ii",
-    "skills": "",
-    "linkedin": "",
+    "skills": ["Public Speaking", "Leadership", "Motivator","Content Creator"],
+    "linkedin": "https://www.linkedin.com/in/seli-nopiani-71136737a/",
     "github": ""
   },
   {
@@ -25,7 +25,7 @@
     "active": true,
     "photo": "/images/members/sazkia.jpg",
     "instagram": "aikzasbila",
-    "skills": "",
+    "skills": ["Public Speaking"," Writing", "Sense of Branding"],
     "linkedin": "https://www.linkedin.com/in/sazkia-salsabila-a32637351/",
     "github": ""
   },
